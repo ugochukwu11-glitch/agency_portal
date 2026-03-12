@@ -56,6 +56,25 @@ a:hover {
   padding: 0.85rem 1rem;
 }
 
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.nav-brand:hover {
+  text-decoration: none;
+  background: #f8fafc;
+  border-color: #dbe8f0;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -80,6 +99,28 @@ a:hover {
 .nav-pill:hover {
   background: #d9f1e7;
   text-decoration: none;
+}
+
+.nav-pill-active {
+  border-color: #0b6e4f;
+  background: #0b6e4f;
+  color: #ffffff;
+}
+
+.nav-pill-active:hover {
+  background: #09573f;
+  color: #ffffff;
+}
+
+button.nav-pill {
+  border: 1px solid #b8d9cd;
+  background: #eaf8f2;
+  color: #0f513c;
+  min-height: 42px;
+}
+
+button.nav-pill:hover {
+  background: #d9f1e7;
 }
 
 .nav-pill-logout {

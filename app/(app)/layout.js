@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { getActiveAgencyForUser, getCurrentUserOrRedirect } from '@/lib/agency';
+import LogoutButton from '@/components/logout-button';
+
+export const dynamic = 'force-dynamic';
 
 export default async function AppLayout({ children }) {
   const supabase = await createClient();
@@ -17,9 +20,7 @@ export default async function AppLayout({ children }) {
           <Link className="btn" href="/login">
             Back to login
           </Link>
-          <Link className="btn btn-ghost" href="/logout">
-            Logout
-          </Link>
+          <LogoutButton className="btn btn-ghost" label="Logout" />
         </div>
       </div>
     );

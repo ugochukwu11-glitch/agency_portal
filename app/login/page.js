@@ -1,18 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { useMemo, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const PENDING_AGENCY_NAME_KEY = 'pending_agency_name';
 
 export default function LoginPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
 
-  const message = useMemo(() => searchParams.get('message') || '', [searchParams]);
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setMessage(params.get('message') || '');
+  }, []);
 
   async function handleSubmit(event) {
     event.preventDefault();

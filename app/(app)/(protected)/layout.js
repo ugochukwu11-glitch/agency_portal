@@ -2,6 +2,8 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { getActiveAgencyForUser, getCurrentUserOrRedirect } from '@/lib/agency';
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProtectedLayout({ children }) {
   const supabase = await createClient();
   const user = await getCurrentUserOrRedirect(supabase);
