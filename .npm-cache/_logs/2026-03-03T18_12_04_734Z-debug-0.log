@@ -1,0 +1,76 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/kelvinanowu/N8N-workflows/property_upload_upload_page/.npmrc
+5 silly config load:file:/Users/kelvinanowu/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/kelvinanowu/N8N-workflows/property_upload_upload_page/.npm-cache/_logs/2026-03-03T18_12_04_734Z-
+10 verbose logfile /Users/kelvinanowu/N8N-workflows/property_upload_upload_page/.npm-cache/_logs/2026-03-03T18_12_04_734Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile done cleaning log files
+13 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ENOTFOUND
+14 silly idealTree buildDeps
+15 silly fetch manifest @supabase/ssr@^0.5.2
+16 silly packumentCache full:https://registry.npmjs.org/@supabase%2fssr cache-miss
+17 http fetch GET https://registry.npmjs.org/@supabase%2fssr attempt 1 failed with ENOTFOUND
+18 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ENOTFOUND
+19 http fetch GET https://registry.npmjs.org/@supabase%2fssr attempt 2 failed with ENOTFOUND
+20 http fetch GET https://registry.npmjs.org/npm attempt 3 failed with ENOTFOUND
+21 http fetch GET https://registry.npmjs.org/@supabase%2fssr attempt 3 failed with ENOTFOUND
+22 silly fetch manifest @supabase/supabase-js@^2.49.4
+23 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js cache-miss
+24 http fetch GET https://registry.npmjs.org/@supabase%2fsupabase-js attempt 1 failed with ENOTFOUND
+25 http fetch GET https://registry.npmjs.org/@supabase%2fsupabase-js attempt 2 failed with ENOTFOUND
+26 http fetch GET https://registry.npmjs.org/@supabase%2fsupabase-js attempt 3 failed with ENOTFOUND
+27 silly fetch manifest next@^15.2.4
+28 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+29 http fetch GET https://registry.npmjs.org/next attempt 1 failed with ENOTFOUND
+30 http fetch GET https://registry.npmjs.org/next attempt 2 failed with ENOTFOUND
+31 http fetch GET https://registry.npmjs.org/next attempt 3 failed with ENOTFOUND
+32 silly fetch manifest react@^19.0.0
+33 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+34 http fetch GET 200 https://registry.npmjs.org/react 24ms (cache hit)
+35 silly packumentCache full:https://registry.npmjs.org/react set size:6527769 disposed:false
+36 silly fetch manifest react-dom@^19.0.0
+37 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/react-dom 15ms (cache hit)
+39 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8658165 disposed:false
+40 silly placeDep ROOT @supabase/ssr@ OK for: agency-portal@0.1.0 want: ^0.5.2
+41 silly placeDep ROOT @supabase/supabase-js@ OK for: agency-portal@0.1.0 want: ^2.49.4
+42 silly placeDep ROOT next@ OK for: agency-portal@0.1.0 want: ^15.2.4
+43 silly placeDep ROOT react@19.2.4 OK for: agency-portal@0.1.0 want: ^19.0.0
+44 silly placeDep ROOT react-dom@19.2.4 OK for: agency-portal@0.1.0 want: ^19.0.0
+45 silly fetch manifest scheduler@^0.27.0
+46 silly packumentCache full:https://registry.npmjs.org/scheduler cache-miss
+47 http fetch GET 200 https://registry.npmjs.org/scheduler 11ms (cache hit)
+48 silly packumentCache full:https://registry.npmjs.org/scheduler set size:5418360 disposed:false
+49 silly placeDep ROOT scheduler@0.27.0 OK for: react-dom@19.2.4 want: ^0.27.0
+50 verbose type system
+51 verbose stack FetchError: request to https://registry.npmjs.org/@supabase%2fssr failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+51 verbose stack     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+51 verbose stack     at ClientRequest.emit (node:events:519:28)
+51 verbose stack     at emitErrorEvent (node:_http_client:101:11)
+51 verbose stack     at _destroy (node:_http_client:884:9)
+51 verbose stack     at onSocketNT (node:_http_client:904:5)
+51 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+52 error code ENOTFOUND
+53 error syscall getaddrinfo
+54 error errno ENOTFOUND
+55 error network request to https://registry.npmjs.org/@supabase%2fssr failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+56 error network This is a problem related to network connectivity.
+56 error network In most cases you are behind a proxy or have bad network settings.
+56 error network
+56 error network If you are behind a proxy, please make sure that the
+56 error network 'proxy' config is set properly.  See: 'npm help config'
+57 silly unfinished npm timer reify 1772561524941
+58 silly unfinished npm timer reify:loadTrees 1772561524972
+59 verbose cwd /Users/kelvinanowu/N8N-workflows/property_upload_upload_page
+60 verbose os Darwin 25.0.0
+61 verbose node v20.18.0
+62 verbose npm  v10.8.2
+63 verbose exit 1
+64 verbose code 1
+65 error A complete log of this run can be found in: /Users/kelvinanowu/N8N-workflows/property_upload_upload_page/.npm-cache/_logs/2026-03-03T18_12_04_734Z-debug-0.log
